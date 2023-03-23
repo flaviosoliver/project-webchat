@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <section class="msger">
+    <header class="msger-header">
+      <div class="msger-header-title">
+        <i class="fas fa-comment-alt"></i> SimpleChat
+      </div>
+      <div class="msger-header-options">
+        <span><i class="fas fa-cog"></i></span>
+      </div>
+    </header>
+    <form id='formAlterNick'>
+      <input type="text" id= 'nicknameInput' data-testid="nickname-box" placeholder="Enter your new nickname...">
+      <button type="submit" data-testid="nickname-button">Send</button>
+    </form>
+    <ul id='listUsers'></ul>
+    <main id='listMessages' class="msger-chat">
+      
+    </main>
+  
+    <form class="msger-inputarea" id='formSendMessage'>
+      <input type="text" id= 'messageInput' data-testid="message-box" class="msger-input" placeholder="Enter your message...">
+      <button type="submit" data-testid="send-button" class="msger-send-btn">Send</button>
+    </form>
+  </section>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./js/client.js"></script>
+</body>
+</html>
